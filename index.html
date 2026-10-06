@@ -1135,9 +1135,9 @@ button.active, button.is-active, button.selected, button.is-selected, button[ari
 <body>
   <div class="widget-container">
     <div class="header-block">
-      <h2 class="lumi-headline-m" style="margin: 0; color: var(--on-surface);">Numogram State-Transition Topology</h2>
+      <h2 class="lumi-headline-m" style="margin: 0; color: var(--on-surface);">Simplified Numogram Zones</h2>
       <p class="lumi-body-s" style="margin: 0; color: var(--on-surface-variant);">
-        Interactive 10-Zone system model mapping the Torque Loop, Warp Circuit, and central Plexus Axis.
+        Interactive system model mapping the Torque Loop, Warp Circuit, and central Plexus Axis.
       </p>
     </div>
 
@@ -1203,16 +1203,16 @@ button.active, button.is-active, button.selected, button.is-selected, button[ari
   <script>
     // --- Data Model & Topology Definition ---
     const ZONES = {
-      0: { name: "Barker / Void", subsystem: "plexus", type: "Plexus Axis", title: "Primordial Noise Engine", cx: 100, cy: 70, desc: "Absolute origin and thermal sink. Generates primordial noise feeding directly into Zone 1." },
-      1: { name: "Initiation", subsystem: "torque", type: "Torque Loop", title: "Primary Feed Channel", cx: 220, cy: 150, desc: "Receives primordial feed from Zone 0 and initiates the clockwise Torque cycle." },
-      2: { name: "Accumulation", subsystem: "torque", type: "Torque Loop", title: "Dyadic Holding Zone", cx: 330, cy: 150, desc: "Stores differential momentum from Zone 1 and builds system energy towards Zone 4." },
-      4: { name: "Critical Threshold", subsystem: "torque", type: "Torque Loop", title: "Catastrophic Bifurcation", cx: 440, cy: 150, desc: "Apex of Torque buildup. Triggers both return flow to Zone 8 and catastrophic Warp Jump to Zone 3." },
-      8: { name: "Return Flow", subsystem: "torque", type: "Torque Loop", title: "Octadic Recirculation", cx: 540, cy: 260, desc: "Downslope return branch of the main Torque cycle feeding back into Zone 7." },
-      7: { name: "Feedback", subsystem: "torque", type: "Torque Loop", title: "Septadic Damping", cx: 380, cy: 260, desc: "Regulates feedback oscillations before handing current back down to Zone 5." },
-      5: { name: "Recirculation", subsystem: "torque", type: "Torque Loop", title: "Pentadic Re-entry", cx: 220, cy: 260, desc: "Final stabilization node returning momentum directly back to Zone 1 to sustain loop." },
-      3: { name: "Warp Gate In", subsystem: "warp", type: "Warp Circuit", title: "Triadic Singularity Ingress", cx: 330, cy: 330, desc: "Catastrophic entrance point bypassing Torque mechanics directly into the Warp Wormhole." },
-      6: { name: "Warp Gate Out", subsystem: "warp", type: "Warp Circuit", title: "Hexadic Wormhole Terminal", cx: 490, cy: 330, desc: "Reciprocal Warp node ejecting warp current directly into Zone 9 hardware." },
-      9: { name: "Deep Hardware", subsystem: "plexus", type: "Plexus Axis", title: "Core Hardware Engine", cx: 560, cy: 70, desc: "Terminal sink and core processor. Operates in equilibrium with Zone 0 via Plexus Axis." }
+      0: { name: "Void", subsystem: "plexus", type: "Plexus Axis",},
+      1: { name: "Initiation", subsystem: "torque", type: "Torque Loop",},
+      2: { name: "Accumulation", subsystem: "torque", type: "Torque Loop",},
+      4: { name: "Critical Threshold", subsystem: "torque", type: "Torque Loop",},
+      8: { name: "Return Flow", subsystem: "torque", type: "Torque Loop",},
+      7: { name: "Feedback", subsystem: "torque", type: "Torque Loop",},
+      5: { name: "Recirculation", subsystem: "torque", type: "Torque Loop",},
+      3: { name: "Warp Gate In", subsystem: "warp", type: "Warp Circuit",},
+      6: { name: "Warp Gate Out", subsystem: "warp", type: "Warp Circuit",},
+      9: { name: "Deep Hardware", subsystem: "plexus", type: "Plexus Axis",}
     };
 
     const EDGES = [
